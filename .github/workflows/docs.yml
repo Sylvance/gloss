@@ -21,7 +21,7 @@ jobs:
         run: gleam docs build
 
       - name: Copy Docs to Documentation Folder
-        run: cp -r build/dev/docs/gloss docs
+        run: cp -r build/dev/docs/gloss/* docs
 
       - name: Commit Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
